@@ -1,3 +1,5 @@
+#!/usr/bin/env julia
+
 function square_of_sum(n)
     return convert(Int64, ((n * (n + 1)) / 2) ^ 2)
 end
