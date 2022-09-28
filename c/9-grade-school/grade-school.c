@@ -1,11 +1,11 @@
 #include "grade-school.h"
 
-void init_roster(roster_t * roster)
+void init_roster(roster_t *roster)
 {
     *roster = (roster_t) {0};
 }
 
-roster_t get_grade(roster_t * roster, uint8_t grade)
+roster_t get_grade(roster_t *roster, uint8_t grade)
 {
     roster_t grade_roster;
     init_roster(&grade_roster);
@@ -17,7 +17,7 @@ roster_t get_grade(roster_t * roster, uint8_t grade)
     return grade_roster;
 }
 
-bool add_student(roster_t * roster, const char * name, uint8_t grade)
+bool add_student(roster_t *roster, const char *name, uint8_t grade)
 {
     for (size_t i = 0; i < roster->count; i++)
     {
